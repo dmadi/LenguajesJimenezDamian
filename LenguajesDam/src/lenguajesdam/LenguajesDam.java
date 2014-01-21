@@ -18,7 +18,6 @@ public class LenguajesDam {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Bienvenido al curso de Lenguajes");
-        Madi Garcia 
-    }
+        }
     
 }
