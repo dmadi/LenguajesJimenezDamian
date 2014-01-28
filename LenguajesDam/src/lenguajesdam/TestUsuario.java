@@ -10,14 +10,16 @@ package lenguajesdam;
  *
  * @author T107
  */
-public class LenguajesDam {
+public class TestUsuario {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Bienvenido al curso de Lenguajes");
-        }
+    Usuario u=new Usuario();
+    u.setEdad(19);
+    System.out.println(u.edad);
+    }
     
 }
