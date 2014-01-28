@@ -18,8 +18,8 @@ public class TestUsuario {
     public static void main(String[] args) {
         // TODO code application logic here
     Usuario u=new Usuario();
-    u.setEdad(19);
-    System.out.println(u.edad);
+    u.setEdad(12);
+    System.out.println("Edad: " + u.edad);
     }
     
 }
