@@ -11,6 +11,10 @@ package lenguajesdam;
  * @author T107
  */
 public class CuentaDebito extends Cuenta {
+
+    public CuentaDebito(String nombre, float saldo) {
+        super(nombre, saldo);
+    }
     public void crearCuenta(){
      System.out.println("Cuenta de debito creada con exito");
     }

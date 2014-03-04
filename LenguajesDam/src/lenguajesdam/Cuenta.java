@@ -11,35 +11,34 @@ package lenguajesdam;
  * @author T107
  */
 public class Cuenta {
-    private int id;
+
     private  String nombre;
     private float saldo;    
-    
-    public void setId(int id){
-        this.id=id;
+
+    public Cuenta(String nombre, float saldo) {
+        this.nombre = nombre;
+        this.saldo = saldo;
     }
-    
-    public int getId(){
-        return id;
-    }
-      
-    public void setNombre(String nombre){
-        this.nombre=nombre;
-    }
+
   
-    public String getNombre(){
+    
+    public String toString(){
+        return "Usuario "+nombre+" creado con saldo "+ saldo;
+    }
+
+    public String getNombre() {
         return nombre;
     }
-    
-    public void setSaldo(float saldo){
-        this.saldo=saldo;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-    
-    public float getSaldo(){
+
+    public float getSaldo() {
         return saldo;
     }
-    
-    public void crearCuenta(){
-     System.out.println("Cuenta creada con exito");
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
     }
 }

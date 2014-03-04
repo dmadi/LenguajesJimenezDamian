@@ -10,11 +10,15 @@ package lenguajesdam;
  *
  * @author T107
  */
-public class CuentaAhorro {
-    int id;
-    String nombre;
-    float saldo;
+public class CuentaAhorro extends Cuenta{
+
+    public CuentaAhorro(String nombre, float saldo) {
+        super(nombre, saldo);
+    }
+
+    
     public void crearCuenta(){
      System.out.println("Cuenta de ahorro creada con exito");
     }
+    
 }
