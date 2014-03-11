@@ -113,11 +113,15 @@ public class VentanaCuenta extends javax.swing.JFrame {
     }//GEN-LAST:event_textoSaldoActionPerformed
 
     private void botonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCalcularActionPerformed
-        CuentaAhorro c=new CuentaAhorro(textoNombre.getText(), Float.parseFloat(textoSaldo.getText()));
-        etiquetaResultado.setText(c.toString());
+        try{
+            CuentaAhorro c1=new CuentaAhorro(textoNombre.getText(), Float.parseFloat(textoSaldo.getText()));
+        float x=4.0f/0;
+        etiquetaResultado.setText("Cuanta creada con exito: "+ x);
+    }catch(exception e){
+    etiquetaresultado.setText(e.getMessage());
+        }
         
-        
-        
+    } 
         
         
     }//GEN-LAST:event_botonCalcularActionPerformed
